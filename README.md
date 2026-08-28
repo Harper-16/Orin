@@ -5,6 +5,9 @@ Lightweight symbolic AI + local RAG system designed for Raspberry Pi.
 ## Features
 
 * Symbolic text encoding/decoding
+* Fast pure-Python 384D semantic vectorization
+* Cached binary float32 semantic index
+* Exact-topic priority + semantic reranking
 * Spelling correction
 * Concept and alias recognition
 * Intent detection
@@ -14,21 +17,23 @@ Lightweight symbolic AI + local RAG system designed for Raspberry Pi.
 * Compact `knowledge.jsonl`
 * Wikipedia learning
 * Groq knowledge extraction
+* No sentence-transformers
+* No NumPy
+* No PyTorch
 * No Ollama
-
 
 ## Run
 
 ```bash
 cd ~/Orin
-python main_model.py --train
-python main_model.py
+python main_model-3.py --train
+python main_model-3.py
 ```
 
 Ask one question:
 
 ```bash
-python main_model.py --ask "what is artificial intelligence"
+python main_model-3.py --ask "what is artificial intelligence"
 ```
 
 For Wikipedia learning, set:
@@ -42,6 +47,7 @@ Exit chat with:
 ```text
 exit
 ```
+
 MIT License
 
 Copyright (c) 2026 Dhruv Mathummal Panambail
