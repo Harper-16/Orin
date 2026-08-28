@@ -17,10 +17,6 @@ Lightweight symbolic AI + local RAG system designed for Raspberry Pi.
 * Compact `knowledge.jsonl`
 * Wikipedia learning
 * Groq knowledge extraction
-* No sentence-transformers
-* No NumPy
-* No PyTorch
-* No Ollama
 
 ## Run
 This Runs the code and trains it and gived continous chat mode.
