@@ -23,17 +23,18 @@ Lightweight symbolic AI + local RAG system designed for Raspberry Pi.
 * No Ollama
 
 ## Run
+This Runs the code and trains it and gived continous chat mode.
 
 ```bash
 cd ~/Orin
-python main_model-3.py --train
-python main_model-3.py
+python main_model[-Model-name-].py --train
+python main_model[-Model-name-].py
 ```
 
 Ask one question:
 
 ```bash
-python main_model-3.py --ask "what is artificial intelligence"
+python main_model[-Model-name-].py.py --ask "what is artificial intelligence"
 ```
 
 For Wikipedia learning, set:
